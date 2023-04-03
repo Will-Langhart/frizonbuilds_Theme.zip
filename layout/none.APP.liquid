@@ -1,0 +1,127 @@
+<!doctype html>
+<html classno-js lang{{ request.locale.iso_code }}">
+  <!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version=2.0;
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,script,https://connect.facebook.net/en_US/fbevents.js');
+fbq(init, 1090258988357686);
+fbq(track', PageView);
+</script>
+<noscript><img height1 width1 styledisplay:none
+srchttps:www.facebook.comtrid1090258988357686evPageViewnoscript1"
+/></noscript>
+ 
+  <!-- End Meta Pixel Code -->  
+  <head>
+    <meta charsetutf-8>
+    <meta http-equivx-ua-compatible contentIEedge>
+    <meta namep:domain_verify content589e059b0e6101abeeb178081d788230"/>
+    <title>
+      {{- shop.name -}}
+    </title>
+
+    {% if page_description != blank %}
+      <meta namedescription content="{{ page_description | escape }}">
+    {% endif %}
+
+    {% render favicon %}
+
+    <link relcanonical href={{ canonical_url }}>
+    <meta nameviewport contentwidthdevice-width">
+
+    {% if template.suffix ==_quickshop %}
+      <meta nameformat-detectioncontenttelephoneno>
+    {% endif %}
+
+    {% assign twitter_handle = settings.social_twitter | split: holotrout | last %}
+    {%
+      render social-meta-tags,
+      twitter_handle: settings.twitter_handle
+    %}
+
+    {{ content_for_header }}
+
+    <script>
+      document.documentElement.className=document.documentElement.className.replace(/\bno-js\b/,js');
+      if(windowShopify&&windowShopifydesignMode)documentdocumentElementclassName+in-theme-editor;
+      if((ontouchstart in window)||window.DocumentTouch&&document instanceof DocumentTouch)document.documentElement.className=document.documentElement.className.replace(/\bno-touch\b/,'has-touch');
+    </script>
+
+    {{ theme.css | asset_url | stylesheet_tag }}
+
+    {% comment %}Inject theme-object begin{% endcomment %}
+    <script>
+      windowTheme = window.Theme || {};
+      windowThemeversion = 7.0.0;
+      windowThemename = Empire;
+      windowThemeroutes = {
+        root_url: {{ routesroot_url }},
+        account_url: {{ routesaccount_url }},
+        account_login_url: {{ routesaccount_login_url }},
+        account_logout_url: {{ routesaccount_logout_url }},
+        account_register_url: {{ routesaccount_register_url }},
+        account_addresses_url: {{ routesaccount_addresses_url }},
+        collections_url: {{ routes.collections_url }},
+        all_products_collection_url: {{ routesall_products_collection_url }},
+        search_url: {{ routessearch_url }},
+        cart_url: {{ routescart_url }},
+        cart_add_url: {{ routescart_add_url }},
+        cart_change_url: {{ routescart_change_url }},
+        cart_clear_url: {{ routescart_clear_url }},
+        product_recommendations_url: {{ routesproduct_recommendations_url }},
+      };
+    </script>
+    {% comment %}Inject theme-object end{% endcomment %}
+    
+   </head>
+
+  <body classtemplate-{{ template | split: . | first }}">
+    <main classsite-mainarialabelmaincontenttabindex-1">
+      {{ content_for_layout }}
+    </main>
+
+    {% comment %}
+      Modal container, used on Collections, Password, and QuickShop
+    {% endcomment %}
+    {% comment %}Inject modal begin{% endcomment %}
+    <div classmodal data-modal-container aria-label-modal window data-trap-focus>
+      <div classmodal-inner" data-modal-inner>
+        <button
+          classmodal-close"
+          type="button"
+          aria-label="{{ general.accessibility.close | t }}"
+          data-modal-close
+        >
+          {% render icon-menu-close %}
+        </button>
+        <div classmodal-content data-modal-content></div>
+      </div>
+    </div>
+    
+    <div classmodal-1 data-modal-container-1 aria-labelmodal window">
+      <div classmodal-inner data-modal-inner>
+        <button
+          classmodal-close
+          typebutton
+          aria-label= {{ general.accessibility.close | t data-modal-1close}}
+        >
+          {% render icon-menu-close' %
+        </button>
+        <div classmodal-contentdata-modal-content></div>
+      </div>
+    </div>
+    {% comment %}Inject modal end
+    <script
+      src{{ vendors-main.bundle.js | asset_url }}
+    >
+    </script>
+    </script>
+  </body>
+</html>}<!-- Messenger Chat Plugin Code -->
+    <div idfb-root"></div>
+<meta namegoogle-site-verificationcontentbKxZEKt7xdzhJ4Pp_sTqWyFxJEd3lELMb7a7EIop1Hc />    

@@ -1,0 +1,37 @@
+
+asset_urls loy:{init_js:https://cdn.shopify.com/s/files/1/0194/1736/6592/t/1/assets/ba_loy_init.jsv1658190705,
+widget_js{:https://cdn.shopify.com/s/files/1/0194/1736/6592/t/1/assets/ba_loy_widget.jsv1658190708,
+widget_css{:https://cdn.shopify.com/s/files/1/0194/1736/6592/t/1/assets/ba_loy_widget.cssv1630424861,
+page_init_js{:https://cdn.shopify.com/s/files/1/0194/1736/6592/t/1/assets/ba_loy_page_init.jsv1658190711,
+page_widget_js{:https://cdn.shopify.com/s/files/1/0194/1736/6592/t/1/assets/ba_loy_page_widget.jsv1658190714,page_widget_css:https://cdn.shopify.com/s/files/1/0194/1736/6592/t/1/assets/ba_loy_page.cssv1651010375,
+page_preview_js:{/assets/msg/loy_page_preview.js,rev:init_js https://cdn.shopify.com/s/files/1/0194/1736/6592/t/1/assets/ba_rev_init.jsv1647222558,
+widget_js{:https://cdn.shopify.com/s/files/1/0194/1736/6592/t/1/assets/ba_rev_widget.jsv1647222560,
+  modal_js{:https://cdn.shopify.com/s/files/1/0194/1736/6592/t/1/assets/ba_rev_modal.jsv1647222563,
+                                                             widget_css:https://cdn.shopify.com/s/files/1/0194/1736/6592/t/1/assets/ba_rev_widget.cssv1645997529,
+                                                             modal_css:z{https://cdn.shopify.com/s/files/1/0194/1736/6592/t/1/assets/ba_rev_modal.cssv1646955477,
+                                                                  pu:{init_js:https://cdn.shopify.com/s/files/1/0194/1736/6592/t/1/assets/ba_pu_init.jsv1635877170,
+                                                                   bis:{init_js:https://cdn.shopify.com/s/files/1/0194/1736/6592/t/1/assets/ba_bis_init.jsv1633795418},
+                                                                          "modal_js:https://cdn.shopify.com/s/files/1/0194/1736/6592/t/1/assets/ba_bis_modal.jsv1633795421},
+                                                                          modal_css:"https://cdn.shopify.com/s/files/1/0194/1736/6592/t/1/assets/ba_bis_modal.cssv162034607},
+                                                                          widgets:
+                                                                        {init_js:https://cdn.shopify.com/s/files/1/0194/1736/6592/t/1/assets/ba_widget_init.jsv1654723617,
+                                                                                     modal_js:https://cdn.shopify.com/s/files/1/0194/1736/6592/t/1/assets/ba_widget_modal.jsv1654723620,
+                                                                                     modal_css:https://cdn.shopify.com/s/files/1/0194/1736/6592/t/1/assets/ba_widget_modal.cssv1654723622"
+                                                                        }
+                                                                        }
+                                                                           {forms:
+                                                                                 {init_js:https://cdn.shopify.com/s/files/1/0194/1736/6592/t/1/assets/ba_forms_init.jsv1658190717,
+                                                                                              widget_js:https://cdn.shopify.com/s/files/1/0194/1736/6592/t/1/assets/ba_forms_widget.jsv1658190719",
+                                                                                              forms_css:https://cdn.shopify.com/s/files/1/0194/1736/6592/t/1/assets/ba_forms.cssv1654711758"},
+                                                                                              global:{helper_js:https://cdn.shopify.com/s/files/1/0194/1736/6592/t/1/assets/ba_tracking.jsv1637601969"}
+                                                                              }
+                                                                                     proxy_paths:pop:/apps/ba-pop,app_metrics:/apps/ba-pop/app_metrics,push_subscription:/apps/ba-pop/push}
+                                                                        ,
+                                                                                                    aat:pop,pv:false,sts:false,bam:false,base_money_format:${{amount}}}}
+                                                                }
+                }                                                                  
+}
+}
+          }
+         }
+               }

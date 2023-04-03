@@ -1,0 +1,263 @@
+<!doctype html>
+<html classno-js" lang {{ request.locale.iso_code }}">
+  <!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version=2.0;
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,script,
+https://connect.facebook.net/en_US/fbevents.js');
+fbq(init', 1090258988357686');
+fbq(track', PageView);
+</script>
+<noscript>
+  <img height1 width1 styledisplay:none
+srchttps:www.facebook.comtrid1090258988357686evPageViewnoscript1"
+  <core
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true>
+  {
+    "login":"theholotrout",
+    "name":"Holotrout",
+    "tfa_enabled":true,
+    "is_public":true,
+    "role":"Owner",
+    "last_active":"2023-01-04T12:09:20.000-05:00",
+    "saml_name_id":null
+    }
+<remote origin
+  url = "https://github.com/theholotrout/mobile-buy-sdk-ios.git"	
+  url = "https://github.com/theholotrout/Holotrout-App"
+  url = "https://github.com/theholotrout/mobile-buy-sdk-ios.gitfetch = +refsheads*:refsremotesorigin">
+<branch main
+	remote = origin
+	merge = refsheadsmain>
+  <link rel="preconnect" href="https://cdn.shopify.com">
+<link rel="preconnect" href="https://fonts.shopifycdn.com">
+<link rel="preconnect" href="https://v.shopify.com">
+<link rel="preconnect" href="https://cdn.shopifycloud.com"> 
+  theholotrout/mobile-buy-sdk-ios{% comment %}<title>
+  {{- page_title -}}
+
+  {%- if current_tags -%}
+    {% capture cat_array %}{%- render 'advanced-tag-loop' -%}{% endcapture %}
+    {% assign cat_array = cat_array | split: '|' %}
+    {% assign title_tags = '' %}
+    {% assign meta_tags = current_tags | join: ', ' %}
+    {%- for tag in current_tags -%}
+      {% assign is_advanced_tag = false %}
+      {% assign cat = tag | split: '_' | first %}
+
+      {%- unless cat == tag -%}
+        {%- if cat_array contains cat -%}
+          {% assign is_advanced_tag = true %}
+          {% assign title_tags = title_tags | append: ', ' | append: tag | replace_first: '_', ': ' %}
+        {%- endif -%}
+      {%- endunless -%}
+
+      {%- unless is_advanced_tag -%}
+        {% assign title_tags = title_tags | append: ', ' | append: tag %}
+      {%- endunless -%}
+    {%- endfor -%}
+    {{ 'general.title.tags' | t: tags: title_tags | remove_first: ', ' }}
+  {%- endif -%}
+
+  {%- if current_page != 1 -%}
+    {{- 'general.title.page' | t: page: current_page -}}
+  {%- endif -%}
+
+  {%- unless page_title contains shop.name -%}
+    {{- 'general.title.shop' | t: shop: shop.name -}}
+  {%- endunless -%}
+</title>{% endcomment %}
+
+{% if page_description != blank %}
+  {% comment %}<meta name="description" content="{{ page_description | escape }}">{% endcomment %}
+{% endif %}
+
+{% render 'favicon' %}
+
+{% if template contains 'collection' and current_tags %}
+  <meta name="robots" content="noindex" />
+  <link rel="canonical" href="{{ shop.url }}{{ collection.url }}" />
+{% else %}
+  <link rel="canonical" href="{{ canonical_url }}" />
+{% endif %}
+
+<meta name="viewport" content="width=device-width">
+
+{% assign twitter_handle = settings.social_twitter | split: 'twitter.com/' | last %}
+{%
+  render 'social-meta-tags',
+  twitter_handle: twitter_handle
+%}
+
+<link rel="preload" href="{{ settings.type_menu | font_url }}" as="font" crossorigin="anonymous">
+<link rel="preload" as="style" href="{{ 'theme.css' | asset_url }}">
+
+{{ content_for_header }}
+
+{{ 'theme.css' | asset_url | stylesheet_tag }}
+
+{% comment %}Inject theme-object begin{% endcomment %}
+<script>
+  window.Theme = window.Theme || {};
+  window.Theme.version = '7.0.0';
+  window.Theme.name = 'Empire';
+  window.Theme.routes = {
+    root_url: "{{ routes.root_url }}",
+    account_url: "{{ routes.account_url }}",
+    account_login_url": "{{ routes.account_login_url }}",
+    account_logout_url": "{{ routes.account_logout_url }}",
+    account_register_url": "{{ routes.account_register_url }}",
+    account_addresses_url": "{{ routes.account_addresses_url }}",
+    collections_url": "{{ routes.collections_url }}",
+    all_products_collection_url": "{{ routes.all_products_collection_url }}",
+    search_url": "{{ routes.search_url }}",
+    cart_url": "{{ routes.cart_url }}",
+    cart_add_url": "{{ routes.cart_add_url }}",
+    cart_change_url": "{{ routes.cart_change_url }}",
+    cart_clear_url": "{{ routes.cart_clear_url }}",
+    product_recommendations_url": "{{ routes.product_recommendations_url }}",
+  };
+</script>
+{% comment %}Inject theme-object end{% endcomment %}
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="p:domain_verify" content="589e059b0e6101abeeb178081d788230"/>
+    <title>
+      {{- shop.name -}}
+    </title>
+
+    {% if page_description != blank %}
+      <meta name="description" content="{{ page_description | escape }}">
+    {% endif %}
+
+    {% render 'favicon' %}
+
+    <link rel="canonical" href="{{ canonical_url }}">
+    <meta name="viewport" content="width=device-width">
+
+    {% if template.suffix == '_quickshop' %}
+      <meta name="format-detection" content="telephone=no">
+    {% endif %}
+
+    {% assign twitter_handle = settings.social_twitter | split: 'twitter.com/' | last %}
+    {%
+      render 'social-meta-tags',
+      twitter_handle: settings.twitter_handle
+    %}
+
+    {{ content_for_header }}
+
+    <script>
+      document.documentElement.className=document.documentElement.className.replace(/\bno-js\b/,js');
+      if(window.Shopify&&window.Shopify.designMode)document.documentElement.className+=in-theme-editor;
+      if((ontouchstart' in window)||window.DocumentTouch&&document instanceof DocumentTouch)document.documentElement.className=document.documentElement.className.replace(/\bno-touch\b/,'has-touch');
+    </script>
+
+    {{ theme.css | asset_url | stylesheet_tag }}
+
+    {% comment %}Inject theme-object begin{% endcomment %}
+    <script>
+      window.Theme window.Theme || {};
+      window.Theme.version = 7.0.0;
+      window.Theme.name = Empire;
+      window.Theme.routes = {
+        root_url": "{{ routes.root_url }}",
+        "account_url": "{{ routes.account_url }}",
+        "account_login_url": "{{ routes.account_login_url }}",
+        "account_logout_url": "{{ routes.account_logout_url }}",
+        "account_register_url": "{{ routes.account_register_url }}",
+        "account_addresses_url": "{{ routes.account_addresses_url }}",
+        "collections_url": "{{ routes.collections_url }}",
+        "all_products_collection_url": "{{ routes.all_products_collection_url }}",
+        "search_url": "{{ routes.search_url }}",
+        "cart_url": "{{ routes.cart_url }}",
+        "cart_add_url": "{{ routes.cart_add_url }}",
+        "cart_change_url": "{{ routes.cart_change_url }}",
+        "cart_clear_url": "{{ routes.cart_clear_url }}",
+        "product_recommendations_url": "{{ routes.product_recommendations_url }}",
+      };
+    </script>
+    {% comment %}Inject theme-object end{% endcomment %}
+    
+   </head>
+
+  <body class="template-{{ template | split: '.' | first }}">
+    <main class="site-main" aria-label="main content" tabindex="-1">
+      <html](https://holotrout.co))) dir="ltr" lang="en">
+  <head>
+    <meta name="google-site-verification" content= "bKxZEKt7xdzhJ4Pp_sTqWyFxJEd3lELMb7a7EIop1Hc" />{% include 'booster-seo' %}{% render 'pagefly-head' %}
+    <meta charset="utf-8">
+    {% comment %}<title>New Tab</title>{% endcomment %}
+    <style>
+      body {
+        background: #C4E1C5;
+        margin: 0;
+      }
+
+      #backgroundImage {
+        border: none;
+        height: 100%;
+        pointer-events: none;
+        position: fixed;
+        top: 0;
+        visibility: hidden;
+        width: 100%;
+      }
+
+      [show-background-image] #backgroundImage {      {{ content_for_layout }}
+    </main>
+
+    {% comment %}
+      Modal container, used on Collections, Password, and QuickShop
+    {% endcomment %}
+    {% comment %}Inject modal begin{% endcomment %}
+    <div class="modal" data-modal-container aria-label="modal window" data-trap-focus>
+      <div class="modal-inner" data-modal-inner>
+        <button
+          class="modal-close"
+          type="button"
+          aria-label="{{ 'general.accessibility.close' | t }}"
+          data-modal-close
+        >
+          {% render 'icon-menu-close' %}
+        </button>
+        <div class="modal-content" data-modal-content></div>
+      </div>
+    </div>
+    
+    <div class="modal-1" data-modal-container-1 aria-label="modal window">
+      <div class="modal-inner" data-modal-inner>
+        <button
+          class="modal-close"
+          type="button"
+          aria-label="{{ 'general.accessibility.close' | t }}"
+          data-modal-1-close
+        >
+          {% render 'icon-menu-close' %}
+        </button>
+        <div class="modal-content" data-modal-content></div>
+      </div>
+    </div>
+    {% comment %}Inject modal end{% endcomment %}
+
+
+    <script
+      src="{{ 'vendors-main.bundle.js' | asset_url }}"
+    >
+    </script>
+
+
+    </script>
+  </body>
+</html>}<!-- Messenger Chat Plugin Code -->
+    <div id="fb-root"></div>
+<meta name="google-site-verification" content= "bKxZEKt7xdzhJ4Pp_sTqWyFxJEd3lELMb7a7EIop1Hc" /> 
+   <link rel="preconnect" href="https://github.com/theholotrout/Mobile-iOS-Buy.git"  
